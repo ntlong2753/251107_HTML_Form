@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #e6f7ff;
+}
+form {
+    background-color: white;
+    padding: 20px;
+    width: 600px;
+    max-width: 90%;
+    margin: 20px auto;
+    border-radius: 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    border: 3px solid #0099ff;
+}
+h1 {
+    background-color: #ff6633;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin: -20px -20px 20px -20px;
+}
+.input-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-row span {
+    width: 120px;
+    text-align: right;
+    margin-right: 10px;
+    color: #3333ff;
+    flex-shrink: 0;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    max-width: 300px;
+    padding: 3px;
+    border: 1px solid #777;
+    box-shadow: none;
+    transition: none;
+}
+.so-thich-group {
+    display: flex;
+    margin-top: 15px;
+}
+
+.so-thich-label {
+    width: 120px;
+    text-align: right;
+    margin-right: 10px;
+    color: oklch(0.497 0.283 269.846);
+    flex-shrink: 0;
+}
+.checkbox-container {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.checkbox-container label {
+    color: #ff3300;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 5px;
+    transform: none;
+
+    .button-group {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        background-color: #f0f0f0;
+        border: 1px solid #777;
+        padding: 5px 15px;
+        cursor: pointer;
+        border-radius: 0;
+        text-transform: uppercase;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+        transition: none;
+    }
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+        background-color: #e0e0e0;
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    }
+}
