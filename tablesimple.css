@@ -1,13 +1,20 @@
 table {
+/* font-family: arial là chỉnh font chữ; Nếu máy không có Arial thì dùng font sans-serif (font không chân).*/
     font-family: arial, sans-serif;
+/*Gộp các đường viền lại thành 1 (thay vì mỗi ô có viền riêng biệt tách nhau).*/
     border-collapse: collapse;
-    width: 50%;
+    width: 50%; /*width: 50%*/
 }
 td, th{
+/*border: 1px solid black;: Viền đen, dày 1px, nét liền.*/
     border: 1px solid black;
+/*padding: 10px;: Khoảng cách giữa nội dung và viền ô là 10px.*/
     padding: 10px;
+/*text-align: left;: Căn chữ về bên trái*/
     text-align: left;
 }
+/*tr:nth-child(even): Chọn các hàng chẵn (2, 4, 6, …*/
 tr:nth-child(even) {
+/*background-color: #dddddd;*/
     background-color: #dddddd;
 }
