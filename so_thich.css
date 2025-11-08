@@ -1,0 +1,123 @@
+/* Thiết lập cơ bản */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    /* Màu nền xanh da trời nhạt */
+    background-color: #e6f7ff;
+}
+
+/* Định dạng container form */
+form {
+    background-color: white;
+    padding: 20px;
+    width: 600px;
+    max-width: 90%;
+    margin: 20px auto;
+    border-radius: 0;
+    /* Viền xanh dương đậm */
+    border: 3px solid #0099ff;
+    /* Đổ bóng sắc nét */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* 1. Tiêu đề (Phần màu cam) */
+h1 {
+    background-color: #ff6633;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    /* Kéo h1 ra sát mép form */
+    margin: -20px -20px 20px -20px;
+}
+
+/* 2. Căn chỉnh Họ và tên, Email */
+.input-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Khoảng cách giữa các dòng */
+}
+
+.input-row span {
+    /* Độ rộng cố định và Căn phải cho nhãn */
+    width: 120px;
+    text-align: right;
+    margin-right: 5px;
+    /* Màu xanh dương đậm */
+    color: #3333ff;
+    flex-shrink: 0;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    max-width: 250px; /* Độ rộng hộp input gần với ảnh mẫu */
+    padding: 3px;
+    border: 1px solid #777;
+    box-shadow: none;
+    transition: none;
+}
+
+/* 3. Nhóm Sở thích */
+.so-thich-group {
+    display: flex;
+    margin-top: 15px;
+    /* Cần padding-bottom để tạo khoảng trống với nút bấm */
+    padding-bottom: 20px;
+}
+
+.so-thich-label {
+    /* Độ rộng cố định cho nhãn "Sở thích:" */
+    width: 120px;
+    text-align: right;
+    margin-right: 5px;
+    color: #3333ff; /* Màu xanh dương đậm */
+    flex-shrink: 0;
+    padding-top: 3px; /* Căn chỉnh với checkbox dòng đầu tiên */
+}
+
+/* Container 3 cột */
+.checkbox-container {
+    flex-grow: 1;
+    display: grid;
+    /* Tạo 3 cột bằng nhau */
+    grid-template-columns: repeat(3, 1fr);
+    /* Quan trọng: Điều chỉnh gap để các cột sát nhau hơn */
+    gap: 0 5px;
+    margin-bottom: 0; /* Đã có khoảng cách từ so-thich-group */
+}
+
+.checkbox-container label {
+    color: #ff3300; /* Màu chữ đỏ cam cho các tùy chọn */
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px; /* Khoảng cách giữa các dòng sở thích */
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 5px;
+    transform: none;
+}
+
+/* 4. Nhóm Nút bấm */
+.button-group {
+    text-align: center;
+    margin-top: 30px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #f0f0f0;
+    border: 1px solid #777;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 0;
+    text-transform: uppercase;
+    /* Đổ bóng sắc nét */
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    margin: 0 10px;
+}
