@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.registration-container {
+    width: 450px;
+    padding: 20px;
+    background-color: #ffffcc;
+    border: 1px solid #ccc;
+}
+
+.form-title {
+    color: #0000ff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0000ff;
+    padding-bottom: 5px;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    width: 100px;
+    margin-right: 10px;
+    text-align: left;
+    font-size: 14px;
+    color: #000;
+}
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group textarea,
+.form-group select {
+    flex-grow: 1;
+    padding: 2px;
+    border: 1px solid #000;
+    font-size: 14px;
+}
+
+.form-group textarea {
+    height: 60px;
+    resize: none;
+}
+.small-input {
+    width: 150px !important;
+    flex-grow: 0 !important;
+}
+.gender-group {
+    align-items: flex-start;
+}
+.gender-options {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-grow: 1;
+}
+
+.gender-options label {
+    width: auto;
+    margin-right: 0;
+}
+.form-actions {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    padding-left: 110px;
+}
+.form-actions button {
+    padding: 5px 15px;
+    border: 1px solid #000;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+}
